@@ -1,0 +1,171 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #8b182a;
+    background-image: url(wm2.png);
+    background-position: 50px;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #dbeafe;
+}
+
+nav {
+    background-color: #595d61;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 20px;
+}
+
+.logo {
+    color: #f9f9f9;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #000000;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 25px;
+    min-height: 350px;
+}
+
+article {
+    background-color: #aba0a0;
+    color: rgb(0, 0, 0);
+    padding: 25px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+article h2 {
+    color: #1d1d1d;
+    margin-bottom: 15px;
+}
+
+article h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+article p {
+    margin-bottom: 12px;
+}
+
+article ul {
+    padding-left: 22px;
+    margin-bottom: 15px;
+}
+
+aside {
+    background-color: #aba0a0;
+    background-size: cover;
+    color: rgb(19, 18, 18);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #0c0c0c;
+}
+
+aside h3 {
+    color: #0e0e0f;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.biodata {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.biodata th,
+.biodata td {
+     background-color: #e2e8f0;
+    border: 1px solid #0c0c0c;
+    padding: 12px;
+    text-align: left;
+}
+
+.biodata th {
+    background-color: #e2e8f0;
+    width: 30%;
+}
+
+.kartu {
+    background-color: #eff6ff;
+    padding: 15px;
+    border-left: 4px solid #2563eb;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #595d61;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+footer p {
+    margin: 3px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        gap: 8px;
+    }
+
+    section {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
